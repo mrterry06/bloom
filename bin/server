@@ -1,0 +1,13 @@
+var app = require("../app");
+var port = process.env.PORT || 8080;
+
+//Starting Server
+app.listen(port , ()=>{
+  
+  console.log(`Your project is running on port ${port}`);
+
+});
+
+app.on("error", (err)=>{
+	throw err;
+})

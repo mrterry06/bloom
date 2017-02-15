@@ -1,0 +1,29 @@
+{
+  "name": "bloom",
+  "version": "1.0.0",
+  "description": "Dating application ",
+  "main": "app.js",
+  "scripts": {
+    "test": "server www/server.js"
+  },
+  "author": "Scott Terry",
+  "license": "ISC",
+  "dependencies": {
+    "angular-ui-router": "^1.0.0-rc.1",
+    "body-parser": "~1.16.0",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.0",
+    "express": "~4.14.1",
+    "morgan": "~1.7.0",
+    "socket.io": "^1.7.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrterry06/bloom.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mrterry06/bloom/issues"
+  },
+  "homepage": "https://github.com/mrterry06/bloom#readme"
+}
