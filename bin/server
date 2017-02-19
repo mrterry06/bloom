@@ -1,13 +1,22 @@
-var app = require("../app");
-var port = process.env.PORT || 8080;
-
+let app  = require("../app");
+let port = process.env.PORT || 8080;
+let db 	 = require("./db");
 //Starting Server
 app.listen(port , ()=>{
-  
   console.log(`Your project is running on port ${port}`);
-
 });
 
 app.on("error", (err)=>{
 	throw err;
-})
+});
+
+//Verifying Database Connection
+
+db.on("connect", ()=>{
+	console.log("You are connected to Database");
+});
+
+db.on("error", (err)=>{
+	console.warn(err);
+});
+

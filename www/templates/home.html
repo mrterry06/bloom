@@ -1,4 +1,49 @@
-<div id="home">
-	<h1>Lets Chat</h1>
-	<a ui-sref="chat({token:'12345'})">Click Here to chat</a>
+<div id="landing">
+	<section >
+		<button style="background-color: powderblue; text-align: center; width: 100px; float: center;" >Start Your Season</button>
+		<button ng-click="grabProfile()" style="background-color: powderblue; text-align: center; width: 100px; display: block; margin: 10px auto;" >Sign In</button>
+	</section>
+	<div class="img1 header-footer-img">
+		<h3>Bloom-Get Out of your own way</h3>
+	</div>
+	<div class="header">
+
+	</div>
+	<div class="img2" >
+		<div class="sign-up">
+			<h2>Start Your Season Today</h2>
+			<hr>
+			<form name="userSignUp" ng-submit="signUp()" novalidate>
+				<div class="form-group">
+					<label>Username</label>
+					<input type="text" ng-minlength="4" ng-maxlength="12" name="username" ng-model="user.name" class="form-control" placeholder="sirDatesAlot" ng-init="0">	
+				</div>
+				<hr>
+				<div class="form-group">
+					<label>Email</label>
+					<input class="form-control" ng-model="user.email" placeholder="joe@joe.com" type="email" name="email">
+				</div>
+				<div class="form-group" >
+					<label for="confirm-email" >Confirm Email</label>
+					<input class="form-control" ng-model="user.confirmEmail" ng-minlength="5" ng-maxlength="15" id="confirm-email" placeholder="joe@joe.com" type="email" name="confirm-email">
+				</div>
+				<hr>
+				<div class="form-group">
+					<label>Password</label>
+					<input type="text" placeholder="password" class="form-control" ng-model="user.pass" name="password">
+				</div>
+				<div class="form-group">
+					<label>Confirm Password</label>	
+					<input type="text" placeholder="Confirm Password" class="form-control" ng-model="user.confirmPass" name="confrimEmail">
+				</div>
+				<button type="submit" class="btn btn-default btn-block" ng-disabled="userSignUp.$invalid" >Continue</button>
+					
+			</form>
+		</div>
+	</div>
+	<div class="img3"></div>
+	<div class="img4"></div>
+	<div class="header">
+		
+	</div>
 </div>

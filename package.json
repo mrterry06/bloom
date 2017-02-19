@@ -9,15 +9,24 @@
   "author": "Scott Terry",
   "license": "ISC",
   "dependencies": {
+    "angular": "^1.6.2",
     "angular-ui-router": "^1.0.0-rc.1",
     "body-parser": "~1.16.0",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.0",
     "express": "~4.14.1",
+    "karma": "^1.4.1",
+    "mongojs": "^2.4.0",
     "morgan": "~1.7.0",
     "socket.io": "^1.7.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.4.1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mrterry06/bloom.git"

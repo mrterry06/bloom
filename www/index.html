@@ -1,20 +1,26 @@
 <!DOCTYPE html>
-<html ng-app="bloom">
-<head>
-	<title></title>
-	<script src="/node_modules/angular/angular.js"></script>
-	<script src="lib/stateProvider.js"></script>
-	<!-- <script src="/node_modules/socket.io/socket.io.js"></script> -->
-
-	<!-- Angular Modules -->
-	<script type="text/javascript" src="config.js"></script>
-	<script type="text/javascript" src="js/controllers.js"></script>
-	<script type="text/javascript" src="js/services.js"></script>
-	<script type="text/javascript" src="js/directives.js" ></script>
-	<script type="text/javascript" src="js/filters.js"></script>
+<html ng-app="bloom" ng-strict-di>
+<head lang="en">
+	<title>Bloom</title>
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body >
 	<!-- Shifting through views-->
-	<div ui-view ></div>
+	<div class="container-fluid" ui-view ></div>
+
+	<!-- lib's -->
+	<script src="/node_modules/angular/angular.js"></script>
+	<!-- <script src="/node_modules/socket.io/socket.io.js"></script> -->
+
+	<!-- Angular Modules -->
+	<script src="lib/stateProvider.js"></script>
+	<script type="text/javascript" src="config.js"></script>
+	<script type="text/javascript" src="js/controllers.js"></script>
+	<script type="text/javascript" src="js/services.js"></script>
+	<script type="text/javascript" src="js/filters.js"></script>
+	<script type="text/javascript" src="js/directives.js" ></script>
 </body>
 </html>
